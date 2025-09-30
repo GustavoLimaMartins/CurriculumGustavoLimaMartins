@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Interativo - Gustavo Lima Martins</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Fundo cinza escuro */
+            color: #E5E7EB; /* Texto cinza claro */
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        .glass-effect:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-5px);
+        }
+        .skill-badge {
+            background-color: #1F2937; /* Cinza um pouco mais claro */
+            border: 1px solid #374151;
+            transition: all 0.2s ease-in-out;
+        }
+        .skill-badge:hover {
+            background-color: #059669; /* Verde esmeralda */
+            color: #FFFFFF;
+            transform: scale(1.05);
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 1.25rem;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #374151; /* Cinza para a linha do tempo */
+        }
+        .timeline-dot {
+            position: absolute;
+            left: 0.75rem;
+            top: 0;
+            height: 1.25rem;
+            width: 1.25rem;
+            background-color: #111827;
+            border: 3px solid #059669;
+            border-radius: 50%;
+        }
+        /* Efeito de digitação */
+        .typing-effect {
+            border-right: .15em solid #059669; /* Cor do cursor */
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+        }
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #059669; }
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8 lg:p-12">
+    <div class="max-w-5xl mx-auto space-y-12">
+        <!-- Cabeçalho -->
+        <header class="text-center py-8">
+            <h1 class="text-4xl md:text-5xl font-black text-white typing-effect whitespace-normal inline-block">Gustavo Lima Martins</h1>
+            <h2 class="text-xl md:text-2xl font-semibold text-teal-400 mt-2">Engenheiro de Controle e Automação</h2>
+            <p class="text-lg text-gray-300 mt-1">Especialista em Ciência de Dados, Deep Learning, Machine Learning & IA</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="mailto:godisgoodever.bygulima@gmail.com" class="text-gray-400 hover:text-teal-400 transition"><i data-lucide="mail" class="w-6 h-6"></i></a>
+                <a href="https://www.linkedin.com/in/gulimartins" target="_blank" class="text-gray-400 hover:text-teal-400 transition"><i data-lucide="linkedin" class="w-6 h-6"></i></a>
+                <a href="https://github.com/GustavoLimaMartins" target="_blank" class="text-gray-400 hover:text-teal-400 transition"><i data-lucide="github" class="w-6 h-6"></i></a>
+            </div>
+        </header>
+
+        <main class="space-y-12">
+            <!-- Seção de Resumo -->
+            <section id="about">
+                <h3 class="text-2xl font-bold text-white mb-4 border-b-2 border-teal-500 pb-2">Resumo Profissional</h3>
+                <p class="text-lg leading-relaxed">
+                    Engenheiro de Controle e Automação com pós-graduação em Inteligência Artificial, trazendo mais de 3 anos de experiência na criação de soluções de software. Minha especialidade é transformar dados brutos em insights acionáveis, utilizando técnicas de ciência de dados, machine learning e deep learning. Sou apaixonado por otimizar processos através do desenvolvimento de dashboards, integrações via API e aplicação de modelos de IA. Reconhecido pelo desempenho com promoções em minhas duas últimas atuações profissionais, demonstro forte compromisso com a entrega de resultados e crescimento contínuo.
+                </p>
+            </section>
+
+            <!-- Seção de Competências -->
+            <section id="skills">
+                <h3 class="text-2xl font-bold text-white mb-6 border-b-2 border-teal-500 pb-2">Competências Técnicas</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Coluna Linguagens -->
+                    <div class="glass-effect p-5 rounded-lg">
+                        <h4 class="text-xl font-bold text-white mb-4 flex items-center"><i data-lucide="code-2" class="w-6 h-6 mr-2 text-teal-400"></i>Linguagens</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Python</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">JavaScript</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">SQL</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Google Apps Script</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">DAX</span>
+                             <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">C# (.NET)</span>
+                        </div>
+                    </div>
+                    <!-- Coluna BI & Dados -->
+                    <div class="glass-effect p-5 rounded-lg">
+                        <h4 class="text-xl font-bold text-white mb-4 flex items-center"><i data-lucide="database" class="w-6 h-6 mr-2 text-teal-400"></i>BI & Dados</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Tableau</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Power BI</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Looker Studio</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">BigQuery</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">PostgreSQL</span>
+                             <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">MySQL</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Processos ETL</span>
+                        </div>
+                    </div>
+                    <!-- Coluna APIs & Ferramentas -->
+                    <div class="glass-effect p-5 rounded-lg">
+                        <h4 class="text-xl font-bold text-white mb-4 flex items-center"><i data-lucide="settings-2" class="w-6 h-6 mr-2 text-teal-400"></i>APIs & Ferramentas</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">REST APIs</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Google Gemini API</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Microsoft Graph API</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">HTML5 & CSS</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">LabView</span>
+                             <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Excel Avançado</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Seção de Experiência -->
+            <section id="experience">
+                <h3 class="text-2xl font-bold text-white mb-6 border-b-2 border-teal-500 pb-2">Experiência Profissional</h3>
+                <div class="relative timeline pl-10 space-y-10">
+                    <!-- Item Timeline -->
+                    <div class="relative">
+                        <div class="timeline-dot"></div>
+                        <div class="glass-effect p-5 rounded-lg">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h4 class="text-xl font-bold text-white flex items-center">Analista de Engenharia Pleno <span class="ml-2 text-xs bg-teal-500/20 text-teal-300 px-2 py-0.5 rounded-full">Promovido</span></h4>
+                                    <p class="text-md font-semibold text-gray-300">Diel Energia</p>
+                                </div>
+                                <span class="text-sm text-gray-400">ago/2025 - Presente</span>
+                            </div>
+                            <ul class="mt-3 list-disc list-inside text-gray-300 space-y-1">
+                                <li>Liderança da frente de Business Intelligence com Looker Studio.</li>
+                                <li>Desenvolvimento de software em Python para geração de insights via Gemini API.</li>
+                                <li>Criação e otimização de queries SQL em BigQuery e PostgreSQL.</li>
+                                <li>Automação de planilhas e processos com JavaScript (Google Sheets).</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Item Timeline -->
+                    <div class="relative">
+                        <div class="timeline-dot"></div>
+                        <div class="glass-effect p-5 rounded-lg">
+                             <div class="flex justify-between items-start">
+                                <div>
+                                    <h4 class="text-xl font-bold text-white flex items-center">Analista de Engenharia Jr <span class="ml-2 text-xs bg-teal-500/20 text-teal-300 px-2 py-0.5 rounded-full">Promovido</span></h4>
+                                    <p class="text-md font-semibold text-gray-300">Diel Energia</p>
+                                </div>
+                                <span class="text-sm text-gray-400">ago/2024 - ago/2025</span>
+                            </div>
+                            <ul class="mt-3 list-disc list-inside text-gray-300 space-y-1">
+                                <li>Desenvolvimento de scripts em Python e Google Apps Script para automação.</li>
+                                <li>Modelagem Lógica e Física de Banco de Dados MySQL.</li>
+                                <li>Responsável técnico pelo processo de ETL e conexão com Tableau.</li>
+                            </ul>
+                        </div>
+                    </div>
+                     <!-- Item Timeline -->
+                     <div class="relative">
+                        <div class="timeline-dot"></div>
+                        <div class="glass-effect p-5 rounded-lg">
+                             <div class="flex justify-between items-start">
+                                <div>
+                                    <h4 class="text-xl font-bold text-white">Estagiário em Operações</h4>
+                                    <p class="text-md font-semibold text-gray-300">Diel Energia</p>
+                                </div>
+                                <span class="text-sm text-gray-400">jan/2023 - jul/2024</span>
+                            </div>
+                            <ul class="mt-3 list-disc list-inside text-gray-300 space-y-1">
+                                <li>Criação de dashboards para análise de dados em Power BI com DAX.</li>
+                                <li>Automação da integração entre plataformas (OMIE, Field Control) e Google Sheets.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Item Timeline -->
+                    <div class="relative">
+                        <div class="timeline-dot"></div>
+                        <div class="glass-effect p-5 rounded-lg">
+                             <div class="flex justify-between items-start">
+                                <div>
+                                    <h4 class="text-xl font-bold text-white flex items-center">Auxiliar de Farmácia - Nível II <span class="ml-2 text-xs bg-teal-500/20 text-teal-300 px-2 py-0.5 rounded-full">Promovido</span></h4>
+                                    <p class="text-md font-semibold text-gray-300">Raia Drogasil</p>
+                                </div>
+                                <span class="text-sm text-gray-400">nov/2020 - set/2021</span>
+                            </div>
+                             <ul class="mt-3 list-disc list-inside text-gray-300 space-y-1">
+                                <li>Responsável pela dispensa de medicamentos controlados e suporte à gerência.</li>
+                                <li>Desenvolvimento de habilidades em processos, atendimento e marketing digital.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Item Timeline -->
+                    <div class="relative">
+                        <div class="timeline-dot"></div>
+                        <div class="glass-effect p-5 rounded-lg">
+                             <div class="flex justify-between items-start">
+                                <div>
+                                    <h4 class="text-xl font-bold text-white">Auxiliar de Farmácia - Nível I</h4>
+                                    <p class="text-md font-semibold text-gray-300">Raia Drogasil</p>
+                                </div>
+                                <span class="text-sm text-gray-400">fev/2020 - out/2020</span>
+                            </div>
+                             <ul class="mt-3 list-disc list-inside text-gray-300 space-y-1">
+                                <li>Atuação em operação de caixa, organização de layout e controle de estoque.</li>
+                            </ul>
+                        </div>
+                    </div>
+                     <!-- Item Timeline -->
+                     <div class="relative">
+                        <div class="timeline-dot"></div>
+                        <div class="glass-effect p-5 rounded-lg">
+                             <div class="flex justify-between items-start">
+                                <div>
+                                    <h4 class="text-xl font-bold text-white">Estagiário de Metrologia</h4>
+                                    <p class="text-md font-semibold text-gray-300">IPEM-SP</p>
+                                </div>
+                                <span class="text-sm text-gray-400">jan/2018 - dez/2018</span>
+                            </div>
+                            <ul class="mt-3 list-disc list-inside text-gray-300 space-y-1">
+                                <li>Desenvolvimento de projetos para automação de instrumentos de medição.</li>
+                                <li>Utilização do software LabView para criar automatismos para laboratórios.</li>
+                                <li>Fiscalização e calibração de equipamentos seguindo normas ISO e INMETRO.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+             <!-- Seção de Certificações -->
+             <section id="certifications">
+                <h3 class="text-2xl font-bold text-white mb-6 border-b-2 border-teal-500 pb-2">Certificações e Qualificações</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="glass-effect p-4 rounded-lg flex items-start space-x-3">
+                        <i data-lucide="award" class="w-6 h-6 text-teal-400 mt-1 flex-shrink-0"></i>
+                        <div>
+                            <h4 class="font-semibold text-white">Especialista em Power BI & DAX</h4>
+                            <p class="text-sm text-gray-400">Udemy</p>
+                        </div>
+                    </div>
+                    <div class="glass-effect p-4 rounded-lg flex items-start space-x-3">
+                        <i data-lucide="award" class="w-6 h-6 text-teal-400 mt-1 flex-shrink-0"></i>
+                        <div>
+                           <h4 class="font-semibold text-white">Tableau Specialist (Módulos I, II e III)</h4>
+                           <p class="text-sm text-gray-400">Udemy</p>
+                        </div>
+                    </div>
+                    <div class="glass-effect p-4 rounded-lg flex items-start space-x-3">
+                        <i data-lucide="award" class="w-6 h-6 text-teal-400 mt-1 flex-shrink-0"></i>
+                        <div>
+                           <h4 class="font-semibold text-white">Python para Análise de Dados</h4>
+                           <p class="text-sm text-gray-400">Curso em Vídeo & Solyd</p>
+                        </div>
+                    </div>
+                    <div class="glass-effect p-4 rounded-lg flex items-start space-x-3">
+                        <i data-lucide="award" class="w-6 h-6 text-teal-400 mt-1 flex-shrink-0"></i>
+                        <div>
+                           <h4 class="font-semibold text-white">Introdução à Ciência de Dados (60h)</h4>
+                           <p class="text-sm text-gray-400">Fundação Getúlio Vargas (FGV)</p>
+                        </div>
+                    </div>
+                     <div class="glass-effect p-4 rounded-lg flex items-start space-x-3">
+                        <i data-lucide="award" class="w-6 h-6 text-teal-400 mt-1 flex-shrink-0"></i>
+                        <div>
+                           <h4 class="font-semibold text-white">Banco de Dados & SQL (Multi-DB)</h4>
+                           <p class="text-sm text-gray-400">Udemy</p>
+                        </div>
+                     </div>
+                     <div class="glass-effect p-4 rounded-lg flex items-start space-x-3">
+                        <i data-lucide="award" class="w-6 h-6 text-teal-400 mt-1 flex-shrink-0"></i>
+                        <div>
+                           <h4 class="font-semibold text-white">Linguagem C# - Orientação a Objetos (Completo)</h4>
+                           <p class="text-sm text-gray-400">Alura & Udemy</p>
+                        </div>
+                     </div>
+                     <div class="glass-effect p-4 rounded-lg flex items-start space-x-3">
+                        <i data-lucide="award" class="w-6 h-6 text-teal-400 mt-1 flex-shrink-0"></i>
+                        <div>
+                           <h4 class="font-semibold text-white">Linguagens HTML e CSS - Fundamentos Web</h4>
+                           <p class="text-sm text-gray-400">Alura</p>
+                        </div>
+                     </div>
+                     <div class="glass-effect p-4 rounded-lg flex items-start space-x-3">
+                        <i data-lucide="award" class="w-6 h-6 text-teal-400 mt-1 flex-shrink-0"></i>
+                        <div>
+                           <h4 class="font-semibold text-white">Microsoft Excel - Avançado</h4>
+                           <p class="text-sm text-gray-400">Foco em análise de dados e automação</p>
+                        </div>
+                     </div>
+                     <div class="glass-effect p-4 rounded-lg flex items-start space-x-3 md:col-span-2">
+                        <i data-lucide="award" class="w-6 h-6 text-teal-400 mt-1 flex-shrink-0"></i>
+                        <div>
+                           <h4 class="font-semibold text-white">Simpósio Acadêmico: Integração de Redes Industriais e Protocolo IoT</h4>
+                           <p class="text-sm text-gray-400">Faculdade Engenheiro Salvador Arena</p>
+                        </div>
+                     </div>
+                 </div>
+            </section>
+
+            <!-- Seção de Idiomas -->
+            <section id="languages">
+                <h3 class="text-2xl font-bold text-white mb-6 border-b-2 border-teal-500 pb-2">Idiomas</h3>
+                <div class="glass-effect p-4 rounded-lg flex items-start space-x-4">
+                    <i data-lucide="languages" class="w-8 h-8 text-teal-400 mt-1 flex-shrink-0"></i>
+                    <div>
+                       <h4 class="font-semibold text-white text-lg">Inglês</h4>
+                       <p class="text-sm text-gray-400">Nível Profissional Limitado (Limited Working Proficiency)</p>
+                    </div>
+                 </div>
+            </section>
+
+            <!-- Seção de Reconhecimentos e Prêmios -->
+            <section id="awards">
+                <h3 class="text-2xl font-bold text-white mb-6 border-b-2 border-teal-500 pb-2">Reconhecimentos e Prêmios</h3>
+                <div class="glass-effect p-4 rounded-lg flex items-start space-x-4">
+                    <i data-lucide="trophy" class="w-8 h-8 text-teal-400 mt-1 flex-shrink-0"></i>
+                    <div>
+                       <h4 class="font-semibold text-white text-lg">4x Reconhecido como Funcionário do Mês</h4>
+                       <p class="text-sm text-gray-400">Raia Drogasil (Período 2020-2021)</p>
+                    </div>
+                 </div>
+            </section>
+
+            <!-- Seção de Formação Acadêmica -->
+            <section id="education">
+                <h3 class="text-2xl font-bold text-white mb-6 border-b-2 border-teal-500 pb-2">Formação Acadêmica</h3>
+                <div class="space-y-6">
+                    <div class="glass-effect p-5 rounded-lg">
+                        <h4 class="text-xl font-bold text-white">Pós-graduação em Inteligência Artificial para Desenvolvedores</h4>
+                        <p class="text-md font-semibold text-gray-300">FIAP</p>
+                        <p class="text-sm text-gray-400">ago/2025 - jun/2026</p>
+                    </div>
+                     <div class="glass-effect p-5 rounded-lg">
+                        <h4 class="text-xl font-bold text-white">Bacharelado em Engenharia de Controle e Automação</h4>
+                        <p class="text-md font-semibold text-gray-300">Faculdade Engenheiro Salvador Arena</p>
+                        <p class="text-sm text-gray-400">2019 - 2024</p>
+                    </div>
+                     <div class="glass-effect p-5 rounded-lg">
+                        <h4 class="text-xl font-bold text-white">Técnico em Mecatrônica</h4>
+                        <p class="text-md font-semibold text-gray-300">ETEC - Escola Técnica Estadual de São Paulo</p>
+                        <p class="text-sm text-gray-400">2017 - 2018</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="text-center text-gray-500 text-sm mt-12 pb-4">
+            <p>Currículo desenvolvido por Gustavo Lima Martins. Todos os direitos reservados © 2025.</p>
+        </footer>
+    </div>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
+
+
+
+
