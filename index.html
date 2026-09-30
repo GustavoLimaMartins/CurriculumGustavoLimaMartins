@@ -52,31 +52,17 @@
             border: 3px solid #059669;
             border-radius: 50%;
         }
-        /* Efeito de digitação */
-        .typing-effect {
-            border-right: .15em solid #059669; /* Cor do cursor */
-            white-space: nowrap;
-            overflow: hidden;
-            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
-        }
-        @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
-        }
-        @keyframes blink-caret {
-            from, to { border-color: transparent }
-            50% { border-color: #059669; }
-        }
     </style>
 </head>
 <body class="p-4 md:p-8 lg:p-12">
     <div class="max-w-5xl mx-auto space-y-12">
         <header class="text-center py-8">
-            <h1 class="text-4xl md:text-5xl font-black text-white typing-effect whitespace-normal inline-block">Gustavo Lima Martins</h1>
-            <h2 class="text-xl md:text-2xl font-semibold text-teal-400 mt-2">Ciência e Análise de Dados</h2>
-            <p class="text-lg text-gray-300 mt-1">Especializando em IA, Machine Learning e Deep Learning</p>
-            <div class="flex justify-center space-x-4 mt-4">
-                <a href="mailto:gustavolimamartins2018@gmail.com" class="text-gray-400 hover:text-teal-400 transition"><i data-lucide="mail" class="w-6 h-6"></i></a>
+            <h1 class="text-2xl sm:text-4xl md:text-5xl font-black text-white leading-tight">Gustavo Lima Martins</h1>
+            <h2 class="text-base sm:text-xl md:text-2xl font-semibold text-teal-400 mt-2 leading-snug">Dev &amp; Data Scientist <span class="hidden sm:inline">| </span><br class="sm:hidden">AI Specialist</h2>
+            <p class="text-lg text-gray-300 mt-1">Santo André, São Paulo, Brasil</p>
+            <div class="flex justify-center flex-wrap gap-4 mt-4">
+                <a href="mailto:godisgoodever.bygulima@gmail.com" class="text-gray-400 hover:text-teal-400 transition" title="godisgoodever.bygulima@gmail.com"><i data-lucide="mail" class="w-6 h-6"></i></a>
+                <a href="tel:+5511920070195" class="text-gray-400 hover:text-teal-400 transition" title="(11) 92007-0195"><i data-lucide="phone" class="w-6 h-6"></i></a>
                 <a href="https://www.linkedin.com/in/gulimartins" target="_blank" class="text-gray-400 hover:text-teal-400 transition"><i data-lucide="linkedin" class="w-6 h-6"></i></a>
                 <a href="https://github.com/GustavoLimaMartins" target="_blank" class="text-gray-400 hover:text-teal-400 transition"><i data-lucide="github" class="w-6 h-6"></i></a>
             </div>
@@ -86,73 +72,81 @@
             <section id="about">
                 <h3 class="text-2xl font-bold text-white mb-4 border-b-2 border-teal-500 pb-2">Resumo Profissional</h3>
                 <p class="text-lg leading-relaxed">
-                    Engenheiro de Controle e Automação com pós-graduação em Inteligência Artificial e mais de 3 anos de experiência transformando dados brutos em soluções preditivas. Especialista em todo o ciclo de vida de projetos de Ciência de Dados, desde a análise exploratória de dados (EDA), pré-processamento avançado, até implementação e avaliação de modelos.
+                    Formado em Engenharia de Controle e Automação e atualmente estudante de pós-graduação em Estatística para Inteligência Artificial e Ciência de Dados. Tem interesse e atuação em mecatrônica, robótica e inteligência artificial, e busca desenvolver competências e conhecimentos nesses campos.
                 </p>
             </section>
 
             <section id="skills">
-                <h3 class="text-2xl font-bold text-white mb-6 border-b-2 border-teal-500 pb-2">Tech Features</h3>
+                <h3 class="text-2xl font-bold text-white mb-6 border-b-2 border-teal-500 pb-2">Competências</h3>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Inteligência artificial</span>
+                    <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Ciência de dados</span>
+                    <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Estatística</span>
+                </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div class="glass-effect p-5 rounded-lg">
-                        <h4 class="text-xl font-bold text-white mb-4 flex items-center"><i data-lucide="code-2" class="w-6 h-6 mr-2 text-teal-400"></i>Languages, Libs & Tools</h4>
+                        <h4 class="text-xl font-bold text-white mb-4 flex items-center"><i data-lucide="code-2" class="w-6 h-6 mr-2 text-teal-400"></i>Linguagens e ferramentas</h4>
                         <div class="flex flex-wrap gap-2">
                             <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Python</span>
-                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Numpy</span>
-                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Pandas</span>
-                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Matplotlib</span>
-                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Seaborn</span>
-                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">C#</span>
-                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">SQL</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">TypeScript</span>
                             <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">JavaScript</span>
-                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">REST APIs</span>
-                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Google Cloud API</span>
-                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Microsoft Graph API</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">SQL</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">C#</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">VBA</span>
                             <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Git / GitHub</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">REST APIs</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Microsoft Graph API</span>
                             <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Google Sheets</span>
                             <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Google Apps Script</span>
-                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Google Gemini API</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Gemini API</span>
                             <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Microsoft Excel avançado</span>
-                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Microsoft Word avançado</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Clean Code</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">SOLID</span>
                         </div>
                     </div>
                     <div class="glass-effect p-5 rounded-lg">
                         <h4 class="text-xl font-bold text-white mb-4 flex items-center"><i data-lucide="brain-circuit" class="w-6 h-6 mr-2 text-teal-400"></i>Machine Learning</h4>
                         <div class="flex flex-wrap gap-2">
                             <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Análise Exploratória (EDA)</span>
-                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Pré-processamento de Dados</span>
-                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Métricas de Avaliação</span>
-                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Modelos de Regressão</span>
-                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Modelos de Classificação</span>
-                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Clusterização</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Feature engineering</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Hiperparametrização</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Busca heurística</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">LightGBM</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">XGBoost</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Pipeline, validação e deploy</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Classification report</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Curva ROC</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Permutation importance</span>
                         </div>
                     </div>
                     <div class="glass-effect p-5 rounded-lg">
-                        <h4 class="text-xl font-bold text-white mb-4 flex items-center"><i data-lucide="brain-circuit" class="w-6 h-6 mr-2 text-teal-400"></i>Deep Learning</h4>
+                        <h4 class="text-xl font-bold text-white mb-4 flex items-center"><i data-lucide="sparkles" class="w-6 h-6 mr-2 text-teal-400"></i>Inteligência artificial</h4>
                         <div class="flex flex-wrap gap-2">
-                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Análise Exploratória (EDA)</span>
-                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Pré-processamento de Dados</span>
-                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Métricas de Avaliação</span>
-                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Scikit-Learn</span>
-                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">TensorFlow</span>
-                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Keras</span>
-                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Visão Computacional</span>
-                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">OCR</span>
-                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">GANs</span>
-                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">KCF</span>
-                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">CSRT</span>
-                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">YOLO</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Deep Learning</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Wide &amp; Deep</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Embeddings</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Agentic AI</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">RAG</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Prompt engineering</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Claude</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Gemini</span>
                         </div>
                     </div>
                     <div class="glass-effect p-5 rounded-lg">
-                        <h4 class="text-xl font-bold text-white mb-4 flex items-center"><i data-lucide="database" class="w-6 h-6 mr-2 text-teal-400"></i>BI & Databases</h4>
+                        <h4 class="text-xl font-bold text-white mb-4 flex items-center"><i data-lucide="database" class="w-6 h-6 mr-2 text-teal-400"></i>BI, dados e arquitetura</h4>
                         <div class="flex flex-wrap gap-2">
                             <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Tableau</span>
                             <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Power BI</span>
                             <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Looker Studio</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">DAX</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Power Query</span>
                             <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">BigQuery</span>
                             <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">PostgreSQL</span>
-                             <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">MySQL</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">MySQL</span>
                             <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Processos ETL</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">MQTT</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Payloads IoT</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-sm font-medium">Arquitetura hexagonal</span>
                         </div>
                     </div>
                 </div>
@@ -164,112 +158,253 @@
                     <div class="relative">
                         <div class="timeline-dot"></div>
                         <div class="glass-effect p-5 rounded-lg">
-                            <div class="flex justify-between items-start">
+                            <div class="flex justify-between items-start gap-4">
                                 <div>
-                                    <h4 class="text-xl font-bold text-white flex items-center">Analista de Engenharia Pleno <span class="ml-2 text-xs bg-teal-500/20 text-teal-300 px-2 py-0.5 rounded-full">Promovido</span></h4>
-                                    <p class="text-md font-semibold text-gray-300">Diel Energia</p>
+                                    <h4 class="text-xl font-bold text-white">Desenvolvedor de software júnior</h4>
+                                    <p class="text-md font-semibold text-gray-300">Diel Energia · São Paulo, Brasil</p>
                                 </div>
-                                <span class="text-sm text-gray-400">ago/2025 - Presente</span>
+                                <span class="text-sm text-gray-400 whitespace-nowrap">nov/2025 – Presente</span>
                             </div>
                             <ul class="mt-3 list-disc list-inside text-gray-300 space-y-1">
-                                <li>Liderança da frente de Business Intelligence com DataViz Looker Studio,</li>
-                                <li>Ciência de dados aplicada com ML e DL para gerar insights ocultos/desconhecidos,</li>
-                                <li>Avaliação técnica da modelagem (classification report, permutation importance, curva ROC etc.)</li>
-                                <li>Relatório estatístico acerca dos resultados de classificação/predição para ML e DL,</li>
-                                <li>Desenvolvimento de modelos preditivos e software em Python para geração de insights, com Gemini API,</li>
-                                <li>Criação e otimização de queries SQL em BigQuery e PostgreSQL,</li>
-                                <li>Automação de planilhas e processos com JavaScript (Google Sheets).</li>
+                                <li>Contribuição técnica em projetos TypeScript e Python.</li>
+                                <li>Aplicação de OOP, SOLID, KISS, YAGNI, SRP, OCP, DIP, DRY e Clean Code.</li>
+                                <li>Prompt engineering para desenvolvimento assistido por IA (Claude, Gemini Pro e Cursor Grok).</li>
+                                <li>Pesquisa acadêmica e desenvolvimento de software para arquiteturas Agentic AI e RAG.</li>
+                                <li>Manipulação de dados de payloads IoT, broker MQTT e arquitetura hexagonal.</li>
+                                <li>Ciência de dados aplicada a casos de negócio com machine learning e deep learning (pipeline, validação e deploy).</li>
+                                <li>Análise exploratória (EDA), feature engineering, hiperparametrização e busca heurística.</li>
+                                <li>Arquitetura e normalização para Machine Learning (LightGBM e XGBoost).</li>
+                                <li>Arquitetura e normalização para Deep Learning (Wide &amp; Deep com embeddings).</li>
+                                <li>Interpretabilidade da matemática aplicada em cálculos de engenharia.</li>
+                                <li>Suporte técnico em Tableau, Power BI e Looker Studio.</li>
+                                <li>Suporte técnico em Power Query e linguagem DAX.</li>
+                                <li>Colaboração em projetos corporativos via GitHub.</li>
                             </ul>
                         </div>
                     </div>
                     <div class="relative">
                         <div class="timeline-dot"></div>
                         <div class="glass-effect p-5 rounded-lg">
-                             <div class="flex justify-between items-start">
+                            <div class="flex justify-between items-start gap-4">
                                 <div>
-                                    <h4 class="text-xl font-bold text-white flex items-center">Analista de Engenharia Jr <span class="ml-2 text-xs bg-teal-500/20 text-teal-300 px-2 py-0.5 rounded-full">Promovido</span></h4>
-                                    <p class="text-md font-semibold text-gray-300">Diel Energia</p>
+                                    <h4 class="text-xl font-bold text-white flex items-center flex-wrap">Analista de Engenharia Pleno <span class="ml-2 text-xs bg-teal-500/20 text-teal-300 px-2 py-0.5 rounded-full">Promovido</span></h4>
+                                    <p class="text-md font-semibold text-gray-300">Diel Energia · São Paulo, Brasil</p>
                                 </div>
-                                <span class="text-sm text-gray-400">ago/2024 - ago/2025</span>
+                                <span class="text-sm text-gray-400 whitespace-nowrap">ago/2025 – nov/2025</span>
                             </div>
                             <ul class="mt-3 list-disc list-inside text-gray-300 space-y-1">
-                                <li>Desenvolvimento de scripts em Python e Google Apps Script para automação,</li>
-                                <li>Ensaios em ciência de dados aplicados com ML e DL para análise de viabilidade preditiva/clusterizadora,</li>
-                                <li>Modelagem Lógica e Física de Banco de Dados MySQL,</li>
-                                <li>Análise de dados e obtenção de insights com uso do DataViz Tableau,</li>
-                                <li>Responsável técnico pelo processo de ETL e conexão com Tableau.</li>
+                                <li>Liderança de Business Intelligence em Looker Studio.</li>
+                                <li>Ciência de dados aplicada com ML e DL para gerar insights ocultos e desconhecidos.</li>
+                                <li>Avaliação técnica da modelagem (classification report, permutation importance, curva ROC).</li>
+                                <li>Relatório estatístico dos resultados de classificação e predição para ML e DL.</li>
+                                <li>SQL para extração de dados em BigQuery e PostgreSQL.</li>
+                                <li>Automações em JavaScript para Google Sheets.</li>
+                                <li>Software em Python para insights de dados via Gemini API.</li>
+                                <li>Integração de dados via REST APIs.</li>
+                                <li>Manutenção e desenvolvimento de planilhas.</li>
+                                <li>Suporte intersetorial em soluções de informática (consultoria e mentoria).</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="timeline-dot"></div>
+                        <div class="glass-effect p-5 rounded-lg">
+                             <div class="flex justify-between items-start gap-4">
+                                <div>
+                                    <h4 class="text-xl font-bold text-white flex items-center flex-wrap">Analista de Engenharia Jr III <span class="ml-2 text-xs bg-teal-500/20 text-teal-300 px-2 py-0.5 rounded-full">Promovido</span></h4>
+                                    <p class="text-md font-semibold text-gray-300">Diel Energia · São Paulo, Brasil</p>
+                                </div>
+                                <span class="text-sm text-gray-400 whitespace-nowrap">ago/2024 – ago/2025</span>
+                            </div>
+                            <ul class="mt-3 list-disc list-inside text-gray-300 space-y-1">
+                                <li>Apoio intersetorial na entrega de soluções tecnológicas e automações que substituem processos manuais.</li>
+                                <li>Acesso e extração de dados do Microsoft SharePoint via API Graph, atualização de banco com mysql.connector e conversão de queries SQL em JSON.</li>
+                                <li>Integração, via API, dos dados do ERP terceirizado com planilhas e bases internas.</li>
+                                <li>Manutenção de ferramentas de monitoramento e controle (planilhas, algoritmos lógicos e fórmulas).</li>
+                                <li>Modelagem lógica e física de banco de dados MySQL.</li>
+                                <li>Responsável técnico pelo tráfego de dados interno e pelo novo ERP implementado via API.</li>
+                                <li>Responsável técnico pelo ETL das bases internas, conexão ao Tableau Desktop/Cloud e criação de visuais.</li>
+                                <li>Suporte em dados no desenvolvimento de soluções em VBA, Python e Google Apps Script para outros setores.</li>
                             </ul>
                         </div>
                     </div>
                      <div class="relative">
                         <div class="timeline-dot"></div>
                         <div class="glass-effect p-5 rounded-lg">
-                             <div class="flex justify-between items-start">
+                             <div class="flex justify-between items-start gap-4">
                                 <div>
                                     <h4 class="text-xl font-bold text-white">Estagiário em Operações</h4>
-                                    <p class="text-md font-semibold text-gray-300">Diel Energia</p>
+                                    <p class="text-md font-semibold text-gray-300">Diel Energia · São Paulo, Brasil</p>
                                 </div>
-                                <span class="text-sm text-gray-400">jan/2023 - jul/2024</span>
+                                <span class="text-sm text-gray-400 whitespace-nowrap">jan/2023 – jul/2024</span>
                             </div>
                             <ul class="mt-3 list-disc list-inside text-gray-300 space-y-1">
-                                <li>Criação de dashboards para análise de dados com DAX avançada,</li>
-                                <li>Modelagem relacional e lógica entre datasets com DataViz Power BI,</li>
-                                <li>Automação da integração entre plataformas (OMIE, Field Control) e Google Sheets.</li>
+                                <li>Manutenção de ferramentas de monitoramento e controle (planilhas, algoritmos lógicos e fórmulas).</li>
+                                <li>Análises em Google Sheets: OSM, D0, Report Global, OTD Implantação, OTD Supply e Compras.</li>
+                                <li>Dashboards em Power BI (tratamento, DAX e design).</li>
+                                <li>Atualização automática de planilhas do Microsoft SharePoint, para clientes internos e externos, via API Microsoft 365.</li>
+                                <li>Soluções de análise de dados em Python para apoiar decisões da Engenharia.</li>
+                                <li>Integração de planilhas no Google Sheets com JavaScript para centralizar dados e obter insights.</li>
+                                <li>Automação da integração entre OMIE e Google Sheets via JavaScript.</li>
+                                <li>Automação da integração entre a API Field Control e Google Sheets via Python.</li>
+                                <li>Suporte em dados no desenvolvimento de soluções em VBA, Python e JavaScript para outros setores.</li>
                             </ul>
                         </div>
                     </div>
                      <div class="relative">
                         <div class="timeline-dot"></div>
                         <div class="glass-effect p-5 rounded-lg">
-                             <div class="flex justify-between items-start">
+                             <div class="flex justify-between items-start gap-4">
                                 <div>
                                     <h4 class="text-xl font-bold text-white">Estagiário de Metrologia</h4>
-                                    <p class="text-md font-semibold text-gray-300">IPEM-SP</p>
+                                    <p class="text-md font-semibold text-gray-300">Instituto de Pesos e Medidas do Estado de São Paulo · São Paulo e Região</p>
                                 </div>
-                                <span class="text-sm text-gray-400">jan/2018 - dez/2018</span>
+                                <span class="text-sm text-gray-400 whitespace-nowrap">jan/2018 – dez/2018</span>
                             </div>
                             <ul class="mt-3 list-disc list-inside text-gray-300 space-y-1">
-                                <li>Desenvolvimento de projetos para automação de instrumentos de medição,</li>
-                                <li>Utilização do software LabView para criar automatismos para laboratórios,</li>
-                                <li>Fiscalização e calibração de equipamentos seguindo normas ISO e INMETRO,</li>
-                                <li>Análise de dados de medições e elaboração de relatórios técnicos com uso do LabView.</li>
+                                <li>Fiscalização de equipamentos metrológicos de acordo com as normas ISO.</li>
+                                <li>Calibração de medidas materializadas de volume conforme o regulamento do INMETRO.</li>
+                                <li>Calibração de instrumentos de medição de pressão em mmHg (esfigmomanômetros e correlatos).</li>
+                                <li>Uso de instrumentos metrológicos de aplicação química (proveta, pipeta e outros).</li>
+                                <li>Elaboração de relatórios técnicos.</li>
+                                <li>Projetos para automação de instrumentos de medição e seleção de componentes para ensaios.</li>
+                                <li>Automatismos de laboratório com LabVIEW.</li>
+                                <li>Automação de operações pneumáticas com o software FluidSIM.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </section>
 
+            <section id="education">
+                <h3 class="text-2xl font-bold text-white mb-6 border-b-2 border-teal-500 pb-2">Formação Acadêmica</h3>
+                <div class="space-y-6">
+                    <div class="glass-effect p-5 rounded-lg">
+                        <h4 class="text-xl font-bold text-white flex items-center flex-wrap">Pós-graduação Lato Sensu em Estatística para Inteligência Artificial e Ciência de Dados <span class="ml-2 text-xs bg-teal-500/20 text-teal-300 px-2 py-0.5 rounded-full">Em andamento</span></h4>
+                        <p class="text-md font-semibold text-gray-300">PUC Minas</p>
+                        <p class="text-sm text-gray-400">ago/2026 – ago/2027</p>
+                    </div>
+                    <div class="glass-effect p-5 rounded-lg">
+                        <h4 class="text-xl font-bold text-white">Pós-graduação Lato Sensu em Inteligência Artificial para Desenvolvedores</h4>
+                        <p class="text-md font-semibold text-gray-300">FIAP</p>
+                        <p class="text-sm text-gray-400">ago/2025 – ago/2026</p>
+                    </div>
+                     <div class="glass-effect p-5 rounded-lg">
+                        <h4 class="text-xl font-bold text-white">Bacharelado em Mecatrônica, Robótica e Engenharia de Controle e Automação</h4>
+                        <p class="text-md font-semibold text-gray-300">Faculdade Engenheiro Salvador Arena</p>
+                        <p class="text-sm text-gray-400">2019 – 2024</p>
+                    </div>
+                     <div class="glass-effect p-5 rounded-lg">
+                        <h4 class="text-xl font-bold text-white">Técnico em Mecatrônica</h4>
+                        <p class="text-md font-semibold text-gray-300">ETEC — Escola Técnica Estadual de São Paulo</p>
+                        <p class="text-sm text-gray-400">2017 – 2018</p>
+                    </div>
+                </div>
+            </section>
+
             <section id="projects">
-                <h3 class="text-2xl font-bold text-white mb-6 border-b-2 border-teal-500 pb-2">Projetos de Destaque (Machine Learning)</h3>
+                <h3 class="text-2xl font-bold text-white mb-6 border-b-2 border-teal-500 pb-2">Projetos de Destaque</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
                     <div class="glass-effect p-5 rounded-lg flex flex-col justify-between h-full">
                         <div>
-                            <div class="flex justify-between items-center mb-2">
-                                <h4 class="text-lg font-bold text-white">Previsão End-to-End de Dengue</h4>
-                                <a href="https://github.com/GustavoLimaMartins/END-TO-END-DENGUE-PREDICTION" target="_blank" class="text-gray-400 hover:text-teal-400 transition"><i data-lucide="github" class="w-5 h-5"></i></a>
+                            <div class="flex justify-between items-start gap-3 mb-2">
+                                <h4 class="text-lg font-bold text-white">Assistente médico com LLM e LangGraph</h4>
                             </div>
-                            <p class="text-sm text-gray-300 leading-relaxed">Projeto de ML e DL para prever casos (leve, moderado e grave) de dengue usando dados do <strong>SINAN/DATASUS (2019-2024)</strong>. Inclui ETL, pré-processamento, EDA e tunagem de modelos (XGBoost, RandomForest).</p>
+                            <p class="text-xs font-medium text-teal-400 mb-2">Monografia · 2026</p>
+                            <p class="text-sm text-gray-300 leading-relaxed">Assistente médico de inteligência artificial contextualizado com dados hospitalares, com fine-tuning de LLM e orquestração em LangGraph.</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-effect p-5 rounded-lg flex flex-col justify-between h-full">
+                        <div>
+                            <div class="flex justify-between items-start gap-3 mb-2">
+                                <h4 class="text-lg font-bold text-white">Modelagem de ameaças multicloud com STRIDE</h4>
+                            </div>
+                            <p class="text-xs font-medium text-teal-400 mb-2">Monografia e trabalho técnico · 2026</p>
+                            <p class="text-sm text-gray-300 leading-relaxed">Framework para modelagem automatizada de ameaças em arquiteturas de software, com visão computacional, OCR, grandes modelos de linguagem e a metodologia STRIDE em AWS, Azure e Google Cloud Platform.</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-effect p-5 rounded-lg flex flex-col justify-between h-full">
+                        <div>
+                            <div class="flex justify-between items-start gap-3 mb-2">
+                                <h4 class="text-lg font-bold text-white">Arquitetura Agentic AI para contextos de saúde</h4>
+                            </div>
+                            <p class="text-xs font-medium text-teal-400 mb-2">Trabalho técnico · 2026</p>
+                            <p class="text-sm text-gray-300 leading-relaxed">Arquitetura Agentic AI com LLM para assistência informacional em contextos de saúde.</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-effect p-5 rounded-lg flex flex-col justify-between h-full">
+                        <div>
+                            <div class="flex justify-between items-start gap-3 mb-2">
+                                <h4 class="text-lg font-bold text-white">Apoio à saúde feminina com DL e LLMs</h4>
+                            </div>
+                            <p class="text-xs font-medium text-teal-400 mb-2">Trabalho técnico · 2026</p>
+                            <p class="text-sm text-gray-300 leading-relaxed">Sistema inteligente de apoio à saúde feminina com deep learning, visão computacional e grandes modelos de linguagem.</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-effect p-5 rounded-lg flex flex-col justify-between h-full">
+                        <div>
+                            <div class="flex justify-between items-start gap-3 mb-2">
+                                <h4 class="text-lg font-bold text-white">Predição epidemiológica de dengue</h4>
+                                <a href="https://github.com/GustavoLimaMartins/END-TO-END-DENGUE-PREDICTION" target="_blank" class="text-gray-400 hover:text-teal-400 transition flex-shrink-0"><i data-lucide="github" class="w-5 h-5"></i></a>
+                            </div>
+                            <p class="text-xs font-medium text-teal-400 mb-2">Monografia e trabalho técnico · 2025</p>
+                            <p class="text-sm text-gray-300 leading-relaxed">Pipeline de ciência de dados do DATASUS/SINAN à aplicação de algoritmos híbridos de machine learning e deep learning, em software end-to-end para predição de casos de dengue (2019–2024), com ETL, EDA e modelos como XGBoost e Random Forest.</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-effect p-5 rounded-lg flex flex-col justify-between h-full">
+                        <div>
+                            <div class="flex justify-between items-start gap-3 mb-2">
+                                <h4 class="text-lg font-bold text-white">Otimização logística hospitalar</h4>
+                                <a href="https://github.com/GustavoLimaMartins/GeneticAlgorithmForHospital-sLogistic" target="_blank" class="text-gray-400 hover:text-teal-400 transition flex-shrink-0"><i data-lucide="github" class="w-5 h-5"></i></a>
+                            </div>
+                            <p class="text-xs font-medium text-teal-400 mb-2">Monografia e trabalho técnico · 2025</p>
+                            <p class="text-sm text-gray-300 leading-relaxed">Modelo computacional com algoritmos genéticos para otimização de fluxos logísticos hospitalares, em estudo de caso no Hospital Israelita Albert Einstein, com foco em reduzir custos e tempo de operação.</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-effect p-5 rounded-lg flex flex-col justify-between h-full">
+                        <div>
+                            <div class="flex justify-between items-start gap-3 mb-2">
+                                <h4 class="text-lg font-bold text-white">Ressonância em pontes urbanas</h4>
+                            </div>
+                            <p class="text-xs font-medium text-teal-400 mb-2">Trabalho técnico · 2025</p>
+                            <p class="text-sm text-gray-300 leading-relaxed">Procedimento técnico de baixo custo para análise preliminar de ressonância em pontes urbanas.</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-effect p-5 rounded-lg flex flex-col justify-between h-full">
+                        <div>
+                            <div class="flex justify-between items-start gap-3 mb-2">
+                                <h4 class="text-lg font-bold text-white">Detecção de bolhas em fluxo bifásico</h4>
+                            </div>
+                            <p class="text-xs font-medium text-teal-400 mb-2">Trabalho de conclusão de curso · 2024</p>
+                            <p class="text-sm text-gray-300 leading-relaxed">Visão computacional para detecção de bolhas em circuitos de circulação de fluxo bifásico. Coautoria com Baquini, D. L.; Peres, A. S.; e Oliveira, F. S. R.</p>
                         </div>
                     </div>
 
                     <div class="glass-effect p-5 rounded-lg flex flex-col justify-between h-full">
                         <div>
                             <div class="flex justify-between items-center mb-2">
-                                <h4 class="text-lg font-bold text-white">Clusterização de Perfil de Clientes</h4>
-                                <a href="https://github.com/GustavoLimaMartins/ClientProfileClusterizationForInsights" target="_blank" class="text-gray-400 hover:text-teal-400 transition"><i data-lucide="github" class="w-5 h-5"></i></a>
+                                <h4 class="text-lg font-bold text-white">Chatbot RAG para Prevenção ao Suicídio</h4>
+                                <a href="https://github.com/GustavoLimaMartins/RAG_Suicide_Prevention_Chatbot" target="_blank" class="text-gray-400 hover:text-teal-400 transition"><i data-lucide="github" class="w-5 h-5"></i></a>
                             </div>
-                            <p class="text-sm text-gray-300 leading-relaxed">Aplicação de K-Means e análise de PCA para segmentar clientes, identificar perfis de consumo e gerar insights para estratégias de marketing direcionadas.</p>
+                            <p class="text-sm text-gray-300 leading-relaxed">Chatbot baseado em RAG (Retrieval-Augmented Generation) desenvolvido para oferecer suporte e informações sobre prevenção ao suicídio, utilizando técnicas de NLP e IA.</p>
                         </div>
                     </div>
 
                     <div class="glass-effect p-5 rounded-lg flex flex-col justify-between h-full">
                         <div>
                             <div class="flex justify-between items-center mb-2">
-                                <h4 class="text-lg font-bold text-white">Previsão de Custos de Saúde</h4>
-                                <a href="https://github.com/GustavoLimaMartins/HealthChargesPredictionWithLifeStyle" target="_blank" class="text-gray-400 hover:text-teal-400 transition"><i data-lucide="github" class="w-5 h-5"></i></a>
+                                <h4 class="text-lg font-bold text-white">Algoritmo Genético para Tinder</h4>
+                                <a href="https://github.com/GustavoLimaMartins/GeneticAlgorithmForTinder" target="_blank" class="text-gray-400 hover:text-teal-400 transition"><i data-lucide="github" class="w-5 h-5"></i></a>
                             </div>
-                            <p class="text-sm text-gray-300 leading-relaxed">Desenvolvimento de múltiplos modelos de regressão (Linear, Ridge, Lasso) para prever custos de planos de saúde com base no estilo de vida dos segurados.</p>
+                            <p class="text-sm text-gray-300 leading-relaxed">Aplicação de algoritmo genético para otimizar o processo de matchmaking, considerando múltiplos critérios de compatibilidade e preferências dos usuários.</p>
                         </div>
                     </div>
 
@@ -306,10 +441,20 @@
                     <div class="glass-effect p-5 rounded-lg flex flex-col justify-between h-full">
                         <div>
                             <div class="flex justify-between items-center mb-2">
-                                <h4 class="text-lg font-bold text-white">Classificador de Tipos de Bebidas</h4>
-                                <a href="https://github.com/GustavoLimaMartins/DrinkTypeClassifierWithTreeModels" target="_blank" class="text-gray-400 hover:text-teal-400 transition"><i data-lucide="github" class="w-5 h-5"></i></a>
+                                <h4 class="text-lg font-bold text-white">Previsão de Custos de Saúde</h4>
+                                <a href="https://github.com/GustavoLimaMartins/HealthChargesPredictionWithLifeStyle" target="_blank" class="text-gray-400 hover:text-teal-400 transition"><i data-lucide="github" class="w-5 h-5"></i></a>
                             </div>
-                            <p class="text-sm text-gray-300 leading-relaxed">Comparação de desempenho entre diferentes modelos baseados em árvore (Decision Tree, Random Forest) para classificar tipos de bebidas.</p>
+                            <p class="text-sm text-gray-300 leading-relaxed">Desenvolvimento de múltiplos modelos de regressão (Linear, Ridge, Lasso) para prever custos de planos de saúde com base no estilo de vida dos segurados.</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-effect p-5 rounded-lg flex flex-col justify-between h-full">
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <h4 class="text-lg font-bold text-white">Clusterização de Perfil de Clientes</h4>
+                                <a href="https://github.com/GustavoLimaMartins/ClientProfileClusterizationForInsights" target="_blank" class="text-gray-400 hover:text-teal-400 transition"><i data-lucide="github" class="w-5 h-5"></i></a>
+                            </div>
+                            <p class="text-sm text-gray-300 leading-relaxed">Aplicação de K-Means e análise de PCA para segmentar clientes, identificar perfis de consumo e gerar insights para estratégias de marketing direcionadas.</p>
                         </div>
                     </div>
                 </div>
@@ -321,66 +466,101 @@
                     <div class="glass-effect p-4 rounded-lg flex items-start space-x-3">
                         <i data-lucide="award" class="w-6 h-6 text-teal-400 mt-1 flex-shrink-0"></i>
                         <div>
-                           <h4 class="font-semibold text-white">Introdução à Ciência de Dados (60h)</h4>
-                           <p class="text-sm text-gray-400">Fundação Getúlio Vargas (FGV)</p>
+                           <h4 class="font-semibold text-white">Linguagens HTML e CSS — Fundamentos do Desenvolvimento Web</h4>
+                           <p class="text-sm text-gray-400">Alura · ago/2025</p>
                         </div>
                     </div>
                     <div class="glass-effect p-4 rounded-lg flex items-start space-x-3">
                         <i data-lucide="award" class="w-6 h-6 text-teal-400 mt-1 flex-shrink-0"></i>
                         <div>
-                            <h4 class="font-semibold text-white">Python para Análise de Dados</h4>
-                            <p class="text-sm text-gray-400">Curso em Vídeo & Solyd</p>
+                           <h4 class="font-semibold text-white">Linguagem C# e Orientação a Objetos: coleções, arquivos e bibliotecas</h4>
+                           <p class="text-sm text-gray-400">Alura · abr/2025</p>
                         </div>
                     </div>
                     <div class="glass-effect p-4 rounded-lg flex items-start space-x-3">
                         <i data-lucide="award" class="w-6 h-6 text-teal-400 mt-1 flex-shrink-0"></i>
                         <div>
-                           <h4 class="font-semibold text-white">Banco de Dados & SQL (Multi-DB)</h4>
-                           <p class="text-sm text-gray-400">Udemy</p>
-                        </div>
-                     </div>
-                    <div class="glass-effect p-4 rounded-lg flex items-start space-x-3">
-                        <i data-lucide="award" class="w-6 h-6 text-teal-400 mt-1 flex-shrink-0"></i>
-                        <div>
-                            <h4 class="font-semibold text-white">Especialista em Power BI & DAX</h4>
-                            <p class="text-sm text-gray-400">Udemy</p>
+                           <h4 class="font-semibold text-white">Linguagem C# — Orientação a Objetos (OOP .NET)</h4>
+                           <p class="text-sm text-gray-400">Alura · fev/2025</p>
                         </div>
                     </div>
                     <div class="glass-effect p-4 rounded-lg flex items-start space-x-3">
                         <i data-lucide="award" class="w-6 h-6 text-teal-400 mt-1 flex-shrink-0"></i>
                         <div>
-                           <h4 class="font-semibold text-white">Tableau Specialist (Módulos I, II e III)</h4>
-                           <p class="text-sm text-gray-400">Udemy</p>
+                           <h4 class="font-semibold text-white">Banco de Dados (MySQL, SQL Server, PostgreSQL e Oracle) e SQL</h4>
+                           <p class="text-sm text-gray-400">Udemy · dez/2024</p>
                         </div>
                     </div>
-                     <div class="glass-effect p-4 rounded-lg flex items-start space-x-3">
+                    <div class="glass-effect p-4 rounded-lg flex items-start space-x-3">
                         <i data-lucide="award" class="w-6 h-6 text-teal-400 mt-1 flex-shrink-0"></i>
                         <div>
-                           <h4 class="font-semibold text-white">Linguagem C# - Orientação a Objetos (Completo)</h4>
-                           <p class="text-sm text-gray-400">Alura & Udemy</p>
+                           <h4 class="font-semibold text-white">Tableau — Módulo III</h4>
+                           <p class="text-sm text-gray-400">Funções LOD, cálculo de tabela, paleta de cores, ações com conjuntos e parâmetros. Udemy · jul/2024</p>
                         </div>
-                     </div>
-                     <div class="glass-effect p-4 rounded-lg flex items-start space-x-3">
+                    </div>
+                    <div class="glass-effect p-4 rounded-lg flex items-start space-x-3">
                         <i data-lucide="award" class="w-6 h-6 text-teal-400 mt-1 flex-shrink-0"></i>
                         <div>
-                           <h4 class="font-semibold text-white">Linguagens HTML e CSS - Fundamentos Web</h4>
-                           <p class="text-sm text-gray-400">Alura</p>
+                           <h4 class="font-semibold text-white">Tableau — Módulo II</h4>
+                           <p class="text-sm text-gray-400">JOIN, extração, parâmetros, conjuntos, grupos e compartimentos. Udemy · jul/2024</p>
                         </div>
-                     </div>
-                     <div class="glass-effect p-4 rounded-lg flex items-start space-x-3">
+                    </div>
+                    <div class="glass-effect p-4 rounded-lg flex items-start space-x-3">
                         <i data-lucide="award" class="w-6 h-6 text-teal-400 mt-1 flex-shrink-0"></i>
                         <div>
-                           <h4 class="font-semibold text-white">Microsoft Excel - Avançado</h4>
-                           <p class="text-sm text-gray-400">Foco em análise de dados e automação</p>
+                           <h4 class="font-semibold text-white">Tableau — Módulo I</h4>
+                           <p class="text-sm text-gray-400">Filtros, visuais, medidas, dimensões, linhas de referência e mais. Udemy · mai/2024</p>
                         </div>
-                     </div>
-                     <div class="glass-effect p-4 rounded-lg flex items-start space-x-3 md:col-span-2">
+                    </div>
+                    <div class="glass-effect p-4 rounded-lg flex items-start space-x-3">
                         <i data-lucide="award" class="w-6 h-6 text-teal-400 mt-1 flex-shrink-0"></i>
                         <div>
-                           <h4 class="font-semibold text-white">Simpósio Acadêmico: Integração de Redes Industriais e Protocolo IoT</h4>
-                           <p class="text-sm text-gray-400">Faculdade Engenheiro Salvador Arena</p>
+                           <h4 class="font-semibold text-white">Python — Mundo 1 (40 horas)</h4>
+                           <p class="text-sm text-gray-400">Módulos, operadores, tratamento, transformação e coloração. Curso em Vídeo · fev/2023</p>
                         </div>
-                     </div>
+                    </div>
+                    <div class="glass-effect p-4 rounded-lg flex items-start space-x-3">
+                        <i data-lucide="award" class="w-6 h-6 text-teal-400 mt-1 flex-shrink-0"></i>
+                        <div>
+                           <h4 class="font-semibold text-white">Simpósio Acadêmico: Integração de redes industriais e protocolo IoT</h4>
+                           <p class="text-sm text-gray-400">Faculdade Engenheiro Salvador Arena · fev/2023</p>
+                        </div>
+                    </div>
+                    <div class="glass-effect p-4 rounded-lg flex items-start space-x-3">
+                        <i data-lucide="award" class="w-6 h-6 text-teal-400 mt-1 flex-shrink-0"></i>
+                        <div>
+                           <h4 class="font-semibold text-white">Python básico</h4>
+                           <p class="text-sm text-gray-400">IF, FOR, WHILE, TRY, classes, bibliotecas, requisição web e OOP. Solyd Offensive Security · jan/2023</p>
+                        </div>
+                    </div>
+                    <div class="glass-effect p-4 rounded-lg flex items-start space-x-3">
+                        <i data-lucide="award" class="w-6 h-6 text-teal-400 mt-1 flex-shrink-0"></i>
+                        <div>
+                           <h4 class="font-semibold text-white">Introdução à Ciência de Dados (60 horas)</h4>
+                           <p class="text-sm text-gray-400">Fundação Getulio Vargas · dez/2022</p>
+                        </div>
+                    </div>
+                    <div class="glass-effect p-4 rounded-lg flex items-start space-x-3">
+                        <i data-lucide="award" class="w-6 h-6 text-teal-400 mt-1 flex-shrink-0"></i>
+                        <div>
+                           <h4 class="font-semibold text-white">Especialista em Linguagem DAX (Power BI Projects)</h4>
+                           <p class="text-sm text-gray-400">Udemy · dez/2022</p>
+                        </div>
+                    </div>
+                    <div class="glass-effect p-4 rounded-lg flex items-start space-x-3">
+                        <i data-lucide="award" class="w-6 h-6 text-teal-400 mt-1 flex-shrink-0"></i>
+                        <div>
+                           <h4 class="font-semibold text-white">Especialista em Power BI (Tratamento, Modelagem e Design)</h4>
+                           <p class="text-sm text-gray-400">Udemy · jul/2022</p>
+                        </div>
+                    </div>
+                    <div class="glass-effect p-4 rounded-lg flex items-start space-x-3">
+                        <i data-lucide="award" class="w-6 h-6 text-teal-400 mt-1 flex-shrink-0"></i>
+                        <div>
+                           <h4 class="font-semibold text-white">Microsoft Excel — Avançado</h4>
+                           <p class="text-sm text-gray-400">Udemy · jun/2022</p>
+                        </div>
+                    </div>
                  </div>
             </section>
 
@@ -390,46 +570,48 @@
                     <i data-lucide="languages" class="w-8 h-8 text-teal-400 mt-1 flex-shrink-0"></i>
                     <div>
                        <h4 class="font-semibold text-white text-lg">Inglês</h4>
-                       <p class="text-sm text-gray-400">Nível Profissional Limitado (Limited Working Proficiency)</p>
+                       <p class="text-sm text-gray-400">Nível profissional (Professional Working)</p>
                     </div>
                  </div>
             </section>
 
             <section id="awards">
                 <h3 class="text-2xl font-bold text-white mb-6 border-b-2 border-teal-500 pb-2">Reconhecimentos e Prêmios</h3>
-                <div class="glass-effect p-4 rounded-lg flex items-start space-x-4">
-                    <i data-lucide="trophy" class="w-8 h-8 text-teal-400 mt-1 flex-shrink-0"></i>
-                    <div>
-                       <h4 class="font-semibold text-white text-lg">4x Reconhecido como Funcionário do Mês</h4>
-                       <p class="text-sm text-gray-400">Raia Drogasil (Período 2020-2021)</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="glass-effect p-4 rounded-lg flex items-start space-x-4">
+                        <i data-lucide="trophy" class="w-8 h-8 text-teal-400 mt-1 flex-shrink-0"></i>
+                        <div>
+                           <h4 class="font-semibold text-white text-lg">Funcionário do Mês — 07/2020</h4>
+                           <p class="text-sm text-gray-400">Raia Drogasil</p>
+                        </div>
                     </div>
-                 </div>
-            </section>
-
-            <section id="education">
-                <h3 class="text-2xl font-bold text-white mb-6 border-b-2 border-teal-500 pb-2">Formação Acadêmica</h3>
-                <div class="space-y-6">
-                    <div class="glass-effect p-5 rounded-lg">
-                        <h4 class="text-xl font-bold text-white">Pós-graduação em Inteligência Artificial aplicada à Ciência de Dados</h4>
-                        <p class="text-md font-semibold text-gray-300">FIAP</p>
-                        <p class="text-sm text-gray-400">ago/2025 - jun/2026</p>
+                    <div class="glass-effect p-4 rounded-lg flex items-start space-x-4">
+                        <i data-lucide="trophy" class="w-8 h-8 text-teal-400 mt-1 flex-shrink-0"></i>
+                        <div>
+                           <h4 class="font-semibold text-white text-lg">Funcionário do Mês — 06/2020</h4>
+                           <p class="text-sm text-gray-400">Raia Drogasil</p>
+                        </div>
                     </div>
-                     <div class="glass-effect p-5 rounded-lg">
-                        <h4 class="text-xl font-bold text-white">Bacharelado em Engenharia de Controle e Automação</h4>
-                        <p class="text-md font-semibold text-gray-300">Faculdade Engenheiro Salvador Arena</p>
-                        <p class="text-sm text-gray-400">ago/2019 - ago/2025</p>
+                    <div class="glass-effect p-4 rounded-lg flex items-start space-x-4">
+                        <i data-lucide="trophy" class="w-8 h-8 text-teal-400 mt-1 flex-shrink-0"></i>
+                        <div>
+                           <h4 class="font-semibold text-white text-lg">Funcionário do Mês — 11/2020</h4>
+                           <p class="text-sm text-gray-400">Raia Drogasil</p>
+                        </div>
                     </div>
-                     <div class="glass-effect p-5 rounded-lg">
-                        <h4 class="text-xl font-bold text-white">Técnico em Mecatrônica</h4>
-                        <p class="text-md font-semibold text-gray-300">ETEC - Escola Técnica Estadual de São Paulo</p>
-                        <p class="text-sm text-gray-400">jan/2017 - dez/2018</p>
+                    <div class="glass-effect p-4 rounded-lg flex items-start space-x-4">
+                        <i data-lucide="trophy" class="w-8 h-8 text-teal-400 mt-1 flex-shrink-0"></i>
+                        <div>
+                           <h4 class="font-semibold text-white text-lg">Funcionário do Mês — 03/2021</h4>
+                           <p class="text-sm text-gray-400">Raia Drogasil</p>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
         
         <footer class="text-center text-gray-500 text-sm mt-12 pb-4">
-            <p>Currículo desenvolvido por Gustavo Lima Martins. Todos os direitos reservados © 2025.</p>
+            <p>Currículo desenvolvido por Gustavo Lima Martins. Todos os direitos reservados © 2026.</p>
         </footer>
     </div>
     <script>
