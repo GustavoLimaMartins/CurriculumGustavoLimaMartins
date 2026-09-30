@@ -52,19 +52,113 @@
             border: 3px solid #059669;
             border-radius: 50%;
         }
+        @page {
+            size: A4;
+            margin: 14mm 12mm;
+        }
+        @media print {
+            html, body {
+                background: #fff !important;
+                color: #111827 !important;
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+            body * {
+                color: #111827 !important;
+                background: transparent !important;
+                box-shadow: none !important;
+                text-shadow: none !important;
+                transform: none !important;
+            }
+            .max-w-5xl {
+                max-width: none !important;
+            }
+            .space-y-12 > :not([hidden]) ~ :not([hidden]) {
+                margin-top: 1.25rem !important;
+            }
+            h1, h2, h3, h4 {
+                break-after: avoid;
+                page-break-after: avoid;
+            }
+            p, li {
+                break-inside: avoid;
+                page-break-inside: avoid;
+                overflow-wrap: break-word;
+                white-space: normal !important;
+            }
+            section {
+                break-inside: auto;
+            }
+            .glass-effect {
+                break-inside: avoid;
+                page-break-inside: avoid;
+                border: 1px solid #d1d5db !important;
+                border-radius: 8px !important;
+                margin-bottom: 8px;
+            }
+            #experience .glass-effect {
+                break-inside: auto;
+                page-break-inside: auto;
+            }
+            #experience .flex.justify-between {
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                gap: 0.15rem !important;
+            }
+            .grid {
+                display: block !important;
+            }
+            .grid > * {
+                margin-bottom: 0.75rem;
+            }
+            .timeline {
+                padding-left: 0 !important;
+            }
+            .timeline::before,
+            .timeline-dot {
+                display: none !important;
+            }
+            .skill-badge {
+                border: 1px solid #9ca3af !important;
+                background: #f3f4f6 !important;
+                color: #111827 !important;
+            }
+            h2, h3, .text-teal-400, .text-teal-300 {
+                color: #0f766e !important;
+            }
+            a {
+                text-decoration: none !important;
+            }
+            .print-only {
+                display: inline !important;
+                margin-left: 0.35rem;
+            }
+            header .flex {
+                flex-direction: column !important;
+                align-items: center !important;
+                gap: 0.35rem !important;
+            }
+            #export-pdf, footer {
+                display: none !important;
+            }
+        }
     </style>
 </head>
 <body class="p-4 md:p-8 lg:p-12">
+    <button id="export-pdf" type="button" class="fixed top-4 right-4 z-50 inline-flex items-center gap-2 rounded-full bg-teal-600 px-4 py-2 text-sm font-semibold text-white shadow-lg hover:bg-teal-500">
+        <i data-lucide="file-down" class="w-4 h-4"></i>
+        Exportar PDF
+    </button>
     <div class="max-w-5xl mx-auto space-y-12">
-        <header class="text-center py-8">
+        <header class="text-center pt-16 pb-8 sm:pt-8">
             <h1 class="text-2xl sm:text-4xl md:text-5xl font-black text-white leading-tight">Gustavo Lima Martins</h1>
             <h2 class="text-base sm:text-xl md:text-2xl font-semibold text-teal-400 mt-2 leading-snug">Dev &amp; Data Scientist <span class="hidden sm:inline">| </span><br class="sm:hidden">AI Specialist</h2>
             <p class="text-lg text-gray-300 mt-1">Santo André, São Paulo, Brasil</p>
             <div class="flex justify-center flex-wrap gap-4 mt-4">
-                <a href="mailto:gustavolimamartins2018@gmail.com" class="text-gray-400 hover:text-teal-400 transition" title="gustavolimamartins2018@gmail.com"><i data-lucide="mail" class="w-6 h-6"></i></a>
-                <a href="tel:+5511920070195" class="text-gray-400 hover:text-teal-400 transition" title="(11) 92007-0195"><i data-lucide="phone" class="w-6 h-6"></i></a>
-                <a href="https://www.linkedin.com/in/gulimartins" target="_blank" class="text-gray-400 hover:text-teal-400 transition"><i data-lucide="linkedin" class="w-6 h-6"></i></a>
-                <a href="https://github.com/GustavoLimaMartins" target="_blank" class="text-gray-400 hover:text-teal-400 transition"><i data-lucide="github" class="w-6 h-6"></i></a>
+                <a href="mailto:gustavolimamartins2018@gmail.com" class="inline-flex items-center gap-2 text-gray-400 hover:text-teal-400 transition" title="gustavolimamartins2018@gmail.com"><i data-lucide="mail" class="w-6 h-6"></i><span class="print-only hidden text-sm">gustavolimamartins2018@gmail.com</span></a>
+                <a href="tel:+5511920070195" class="inline-flex items-center gap-2 text-gray-400 hover:text-teal-400 transition" title="(11) 92007-0195"><i data-lucide="phone" class="w-6 h-6"></i><span class="print-only hidden text-sm">(11) 92007-0195</span></a>
+                <a href="https://www.linkedin.com/in/gulimartins" target="_blank" class="inline-flex items-center gap-2 text-gray-400 hover:text-teal-400 transition"><i data-lucide="linkedin" class="w-6 h-6"></i><span class="print-only hidden text-sm">linkedin.com/in/gulimartins</span></a>
+                <a href="https://github.com/GustavoLimaMartins" target="_blank" class="inline-flex items-center gap-2 text-gray-400 hover:text-teal-400 transition"><i data-lucide="github" class="w-6 h-6"></i><span class="print-only hidden text-sm">github.com/GustavoLimaMartins</span></a>
             </div>
         </header>
 
@@ -616,6 +710,9 @@
     </div>
     <script>
         lucide.createIcons();
+        document.getElementById('export-pdf').addEventListener('click', function () {
+            window.print();
+        });
     </script>
 </body>
 </html>
